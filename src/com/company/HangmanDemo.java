@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class HangmanDemo {
@@ -10,6 +11,7 @@ public class HangmanDemo {
         LetterChest letterChest = new LetterChest();
         UserMenu userMenu = new UserMenu();
         Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
 
 
         boolean hasGuessedWord = false;
@@ -17,36 +19,38 @@ public class HangmanDemo {
         boolean allLettersCorrect = false;
 
         String wordInPlay = "";
-        String[] wordInPlaySplit;
+        String[] wordInPlayArray;
         int numberOfTriesUsed = 0;
+        int numberOfHintTriesUsed = 0;
+        String previousHintGiven = "?";
 
          do{
 
              wordInPlay = wordLibrary.getWordFromLibrary();
-             wordInPlaySplit = wordInPlay.split("");
+             wordInPlayArray = wordInPlay.split("");
 
 
              do{
 
                  userMenu.showMenu();
-
+                 System.out.println("The word to guess is " + wordInPlay.length() + " letters long.");
                  String userInput = scanner.nextLine();
 
                  if(userInput.matches("[A-Za-z]{1}")){
 
                      letterChest.addLetter(userInput);
 
-                     for(int i = 0; i < wordInPlaySplit.length; i ++){
-                         if( wordInPlaySplit[i].equals(userInput)){
+                     for(int i = 0; i < wordInPlayArray.length; i ++){
+                         if( wordInPlayArray[i].equals(userInput)){
                              System.out.println(userInput + " - holds place " + (i+1) + " in the word.");
-                             wordInPlaySplit[i] = ".";
+                             wordInPlayArray[i] = ".";
                          }
                      }
 
                      // check how many guessed letters indexes we've reassigned
                      int hasGuessedWordCheck = 0;
-                     for (int i = 0; i < wordInPlaySplit.length; i++){
-                         if(wordInPlaySplit[i].equals(".")){
+                     for (int i = 0; i < wordInPlayArray.length; i++){
+                         if(wordInPlayArray[i].equals(".")){
                              hasGuessedWordCheck++;
                          }
                      }
@@ -67,7 +71,26 @@ public class HangmanDemo {
                      }
 
                  } else if(userInput.equals("1")){
-                     System.out.println("Here's a letter");
+
+                            if(numberOfHintTriesUsed == 2){
+                                System.out.println("Sorry, but you have already used your 2 hints for this word.");
+                            } else {
+
+                                boolean hintWasGiven = false;
+                                do {
+                                    int randomIndex = random.nextInt(wordInPlayArray.length);
+
+                                    if (!wordInPlayArray[randomIndex].equals(".") && !wordInPlayArray[randomIndex].equals(previousHintGiven)) {
+                                        System.out.println(wordInPlayArray[randomIndex] + " holds the " + (randomIndex + 1) + " place in this word.");
+                                        previousHintGiven = wordInPlayArray[randomIndex];
+                                        hintWasGiven = true;
+                                        break;
+                                    }
+
+                                }while(!hintWasGiven);
+                            }
+
+                     numberOfHintTriesUsed++;
 
                  } else if (userInput.equals("2")){
                      letterChest.printGuessedLetters();

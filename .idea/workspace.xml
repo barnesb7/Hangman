@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31fddc76-0ca8-4ed0-9fc6-a816214616ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/HangmanDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/HangmanDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/UserMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/UserMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/WordLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/WordLibrary.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +16,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/HangmanDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+            <state relative-caret-position="133">
+              <caret line="89" column="54" selection-start-line="89" selection-start-column="54" selection-end-line="89" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,8 +79,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="11" />
-    <option name="y" value="75" />
+    <option name="x" value="35" />
+    <option name="y" value="77" />
     <option name="width" value="1440" />
     <option name="height" value="757" />
   </component>
@@ -120,7 +119,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548643720378" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548646381112" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
@@ -162,15 +161,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548637829795</updated>
-      <workItem from="1548637833658" duration="5828000" />
+      <workItem from="1548637833658" duration="8452000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5828000" />
+    <option name="totallyTimeSpent" value="8452000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="11" y="75" width="1440" height="757" extended-state="0" />
+    <frame x="35" y="77" width="1440" height="757" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -180,7 +179,7 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.32932332" />
+      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32932332" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
@@ -188,7 +187,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32932332" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32932332" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -235,8 +234,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/HangmanDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+        <state relative-caret-position="133">
+          <caret line="89" column="54" selection-start-line="89" selection-start-column="54" selection-end-line="89" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
