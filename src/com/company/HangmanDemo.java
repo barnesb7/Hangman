@@ -20,20 +20,24 @@ public class HangmanDemo {
 
         String wordInPlay = "";
         String[] wordInPlayArray;
-        int numberOfTriesUsed = 0;
+        int numberOfTriesLeft = 10;
         int numberOfHintTriesUsed = 0;
         String previousHintGiven = "?";
 
          do{
 
              wordInPlay = wordLibrary.getWordFromLibrary();
+             System.out.println(wordInPlay + "--> Word in play");
              wordInPlayArray = wordInPlay.split("");
 
 
              do{
 
+                 System.out.println("You have " + numberOfTriesLeft + " tries left to guess the word.");
                  userMenu.showMenu();
                  System.out.println("The word to guess is " + wordInPlay.length() + " letters long.");
+                 wordLibrary.printSpecificWordClue(wordInPlay);
+
                  String userInput = scanner.nextLine();
 
                  if(userInput.matches("[A-Za-z]{1}")){
@@ -62,12 +66,12 @@ public class HangmanDemo {
                      }
 
 
-                     numberOfTriesUsed++;
+                     numberOfTriesLeft--;
 
-                     if(numberOfTriesUsed == 10){
+                     if(numberOfTriesLeft == 0){
                          hasUsedUpTries = true;
 
-                         System.out.println("You have used all 10 tries. Sorry.");
+                         System.out.println("You have used all 10 tries. You didn't guess the word " + wordInPlay + "!!!");
                      }
 
                  } else if(userInput.equals("1")){
