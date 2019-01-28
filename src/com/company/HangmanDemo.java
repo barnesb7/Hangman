@@ -18,44 +18,66 @@ public class HangmanDemo {
 
         String wordInPlay = "";
         String[] wordInPlaySplit;
-        String[] wordsAlreadyGuessed = new String[10];
         int numberOfTriesUsed = 0;
 
          do{
 
-             userMenu.showMenu();
              wordInPlay = wordLibrary.getWordFromLibrary();
              wordInPlaySplit = wordInPlay.split("");
 
-             String userInput = scanner.nextLine();
+
+             do{
+
+                 userMenu.showMenu();
+
+                 String userInput = scanner.nextLine();
+
+                 if(userInput.matches("[A-Za-z]{1}")){
+
+                     letterChest.addLetter(userInput);
+
+                     for(int i = 0; i < wordInPlaySplit.length; i ++){
+                         if( wordInPlaySplit[i].equals(userInput)){
+                             System.out.println(userInput + " - holds place " + (i+1) + " in the word.");
+                             wordInPlaySplit[i] = ".";
+                         }
+                     }
+
+                     // check how many guessed letters indexes we've reassigned
+                     int hasGuessedWordCheck = 0;
+                     for (int i = 0; i < wordInPlaySplit.length; i++){
+                         if(wordInPlaySplit[i].equals(".")){
+                             hasGuessedWordCheck++;
+                         }
+                     }
+
+                     //check if all letters have been guessed
+                     if (hasGuessedWordCheck == wordInPlay.length()){
+                         hasGuessedWord = true;
+                         System.out.println("CONGRATS! You've guessed the word " + wordInPlay + "!!!");
+                     }
 
 
+                     numberOfTriesUsed++;
 
-             if(userInput.matches("[A-Za-z]{1}")){
-                 System.out.println("its a letter");
-                 letterChest.addLetter(userInput);
+                     if(numberOfTriesUsed == 10){
+                         hasUsedUpTries = true;
 
-                 numberOfTriesUsed++;
+                         System.out.println("You have used all 10 tries. Sorry.");
+                     }
 
-                 if(numberOfTriesUsed == 10){
-                     hasUsedUpTries = true;
+                 } else if(userInput.equals("1")){
+                     System.out.println("Here's a letter");
 
-                     System.out.println("You have used all 10 tries. Sorry.");
+                 } else if (userInput.equals("2")){
+                     letterChest.printGuessedLetters();
+
                  }
 
-             } else if(userInput.equals("1")){
-                 System.out.println("Here's a letter");
+             }while(!hasGuessedWord || !hasUsedUpTries);
 
-             } else if (userInput.equals("2")){
-                letterChest.printGuessedLetters();
 
-             }
-
-         if(allLettersCorrect){
-             hasGuessedWord = true;
-         }
-
-         }while(!hasGuessedWord || !hasUsedUpTries);
+         } while(!hasGuessedWord || !hasUsedUpTries);
 
     }
 }

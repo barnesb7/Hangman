@@ -5,13 +5,12 @@ import java.util.Random;
 public class WordLibrary {
 
     private Random random = new Random();
-    private String[] wordLibrary = { "poser", "ghostbuster", "mullet",
-                                    "puke", "goo", "pony"};
+    private String[] wordLibrary = { "goop"};
 
 
      public String getWordFromLibrary() {
 
-         int index = random.nextInt(6);
+         int index = random.nextInt(1);
 
          return wordLibrary[index];
      }
