@@ -25,7 +25,7 @@ public class WordLibrary {
 
         switch (wordInput){
 
-            case "goop":   stringToPrint = "90's hand cleaner used to cut grease.";
+            case "goop":   stringToPrint = "Old hand cleaner used to cut grease.";
             break;
 
             case "fuzz":   stringToPrint = "Guitar pedal effect.";

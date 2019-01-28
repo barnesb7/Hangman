@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31fddc76-0ca8-4ed0-9fc6-a816214616ed" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/company/HangmanDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/HangmanDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/UserMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/UserMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/WordLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/WordLibrary.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -56,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/WordLibrary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+            <state relative-caret-position="87">
+              <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -79,8 +77,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/company/LetterChest.java" />
         <option value="$PROJECT_DIR$/src/com/company/UserMenu.java" />
-        <option value="$PROJECT_DIR$/src/com/company/WordLibrary.java" />
         <option value="$PROJECT_DIR$/src/com/company/HangmanDemo.java" />
+        <option value="$PROJECT_DIR$/src/com/company/WordLibrary.java" />
       </list>
     </option>
   </component>
@@ -125,7 +123,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548649822647" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548650019691" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
@@ -167,12 +165,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1548637829795</updated>
-      <workItem from="1548637833658" duration="11843000" />
+      <workItem from="1548637833658" duration="12029000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11843000" />
+    <option name="totallyTimeSpent" value="12029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="18" y="99" width="1440" height="757" extended-state="0" />
@@ -247,8 +245,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/WordLibrary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        <state relative-caret-position="87">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
         </state>
       </provider>
     </entry>
